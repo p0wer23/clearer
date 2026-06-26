@@ -5,10 +5,11 @@
 - repository folder exists
 - product intent is documented
 - tech stack is documented
-- minimal Android project is scaffolded
-- debug APK opens to a blank Compose screen
+- password setup and unlock flow is implemented
+- password hash and salt are stored in encrypted local preferences
+- protected placeholder screen is shown after successful unlock
 - latest debug APK: `apk/Clearer-debug.apk`
-- no password, storage filler, or user controls are implemented yet
+- storage filler controls are not implemented yet
 
 ## Product Decision
 
@@ -29,9 +30,8 @@ It should also clearly state what it cannot guarantee:
 
 ## Next Implementation Steps
 
-- implement first-launch password setup and unlock screen
 - build Compose screen for target GB input and start/cancel actions
-- implement storage writer with progress updates
+- implement the filler writer with progress updates
 - show generated file location for manual deletion
 - add safety checks for available storage and minimum free-space buffer
 - build and test debug APK on device

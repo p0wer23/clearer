@@ -32,7 +32,7 @@ Clearer should use the same native Android direction as the sibling apps.
 - require password entry on later launches before showing filler controls
 - store only a salted password hash, not the raw password
 - keep password and salt in encrypted local preferences or Keystore-backed storage
-- allow changing the password after successful unlock
+- add change-password support in a later iteration
 - keep all authentication local to the device
 
 ## Android Constraints
