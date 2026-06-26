@@ -7,7 +7,7 @@
 - tech stack is documented
 - minimal Android project is scaffolded
 - debug APK opens to a blank Compose screen
-- latest debug APK: `app/build/outputs/apk/debug/Clearer-debug.apk`
+- latest debug APK: `apk/Clearer-debug.apk`
 - no password, storage filler, or user controls are implemented yet
 
 ## Product Decision
