@@ -5,7 +5,10 @@
 - repository folder exists
 - product intent is documented
 - tech stack is documented
-- Android app implementation has not started
+- minimal Android project is scaffolded
+- debug APK opens to a blank Compose screen
+- latest debug APK: `app/build/outputs/apk/debug/Clearer-debug.apk`
+- no password, storage filler, or user controls are implemented yet
 
 ## Product Decision
 
@@ -26,7 +29,6 @@ It should also clearly state what it cannot guarantee:
 
 ## Next Implementation Steps
 
-- scaffold native Android project
 - implement first-launch password setup and unlock screen
 - build Compose screen for target GB input and start/cancel actions
 - implement storage writer with progress updates
