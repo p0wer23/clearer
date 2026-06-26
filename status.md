@@ -7,9 +7,13 @@
 - tech stack is documented
 - password setup and unlock flow is implemented
 - password hash and salt are stored in encrypted local preferences
-- protected placeholder screen is shown after successful unlock
+- unlocked screen accepts a target amount in GB
+- random filler files are written to app-owned external storage
+- progress and current file are shown during generation
+- active generation can be canceled and partial files are kept
+- writes stop at the 1 GB free-space safety buffer
+- filler generation currently runs only while the app stays in the foreground
 - latest debug APK: `apk/Clearer-debug.apk`
-- storage filler controls are not implemented yet
 
 ## Product Decision
 
@@ -30,8 +34,6 @@ It should also clearly state what it cannot guarantee:
 
 ## Next Implementation Steps
 
-- build Compose screen for target GB input and start/cancel actions
-- implement the filler writer with progress updates
-- show generated file location for manual deletion
-- add safety checks for available storage and minimum free-space buffer
-- build and test debug APK on device
+- move generation into a foreground service for background-safe runs
+- show clearer low-space and partial-write summaries
+- test large runs on device and verify manual cleanup flow

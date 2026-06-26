@@ -3,6 +3,7 @@
 Password-protected local Android app for filling available storage with gibberish data.
 
 The user enters an amount of data to generate, measured in GB, and the app writes random non-sparse files until that target is reached or a safe free-space limit is hit. The user deletes the generated files manually outside the app.
+The current implementation runs in the foreground while the app screen stays open.
 
 ## Purpose
 

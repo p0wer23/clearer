@@ -12,7 +12,8 @@ Clearer should use the same native Android direction as the sibling apps.
 - Material 3
 - `ViewModel` + `StateFlow`
 - coroutines
-- foreground service or WorkManager for long-running generation
+- foreground-only `ViewModel` coroutine for the current filler flow
+- foreground service or WorkManager later for background-safe long-running generation
 - AndroidX Security Crypto or platform Keystore-backed password hash storage
 
 ## Storage Approach
